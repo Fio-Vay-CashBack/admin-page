@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-roboto), Roboto, sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    color: rgb(56, 66, 81);
+    background-color: #ffffff;
+    direction: ltr;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.ladi-transition {
+  transition: all 150ms linear 0s;
+}
+
+.ladi-list-disc {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ladi-list-disc li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.ladi-list-disc li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
